@@ -1,11 +1,11 @@
-/*color change*/
+/*change color*/
 let changeColor = document.getElementById('couleur');
 
 changeColor.addEventListener('click', function () {
-	if(changeColor.style.color == 'red'){
+	if (changeColor.style.color == 'red') {
 		changeColor.style.color = 'green';
 	}
-	else{
+	else {
 		changeColor.style.color = 'red';
 	}
 })
@@ -13,16 +13,16 @@ changeColor.addEventListener('click', function () {
 /*user input*/
 let prenom = document.getElementById('name');
 
-prenom.addEventListener('change', function(e) {
-    let resultName = document.getElementById("result")
-	if(prenom.value == 'Matteo'){
+prenom.addEventListener('change', function (e) {
+	let resultName = document.getElementById("result")
+	if (prenom.value == 'Matteo') {
 		resultName.innerText = 'Bonjour ' + e.target.value;
 		resultName.style.color = 'green';
 	}
-	else{
+	else {
 		resultName.innerText = 'Je ne te connais pas ' + e.target.value;
 		resultName.style.color = 'red';
-	}	
+	}
 });
 
 
